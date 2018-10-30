@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'lltreeLibrary_Example' do
+  pod 'lltreeLibrary', :path => '../'
+
+  target 'lltreeLibrary_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
