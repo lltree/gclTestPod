@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'lltreeLibrary'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of lltreeLibrary.'
+  s.summary          = 'test AAAAAAAAA'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,20 +18,21 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+test bbbbbbbbbbb
                        DESC
 
-  s.homepage         = 'https://github.com/gaochunlei/lltreeLibrary'
+  s.homepage         = 'https://github.com/lltree/gclTestPod.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = 'MIT'
   s.author           = { 'gaochunlei' => 'gaochunlei@58ganji.com' }
-  s.source           = { :git => 'https://github.com/gaochunlei/lltreeLibrary.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/lltree/gclTestPod.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'lltreeLibrary/Classes/**/*'
-  
+  s.requires_arc = true
+  s.frameworks = 'UIKit'
   # s.resource_bundles = {
   #   'lltreeLibrary' => ['lltreeLibrary/Assets/*.png']
   # }
