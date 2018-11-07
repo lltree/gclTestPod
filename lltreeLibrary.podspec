@@ -30,7 +30,7 @@ test bbbbbbbbbbb
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'lltreeLibrary/Classes/**/*'
+  #s.source_files = 'lltreeLibrary/Classes/**/*'
   s.requires_arc = true
   s.frameworks = 'UIKit'
   # s.resource_bundles = {
@@ -41,7 +41,14 @@ test bbbbbbbbbbb
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 
- s.subspec 'DataModel' do | subDataModel |
+ s.subspec 'Classes' do | subClasses |
+      subClasses.source_files = 'lltreeLibrary/Classes/**/*'
+      #ui.public_header_files = 'Pod/Classes/UIKitAddition/**/*.h'
+      #ui.resource = "Pod/Assets/MLSUIKitResource.bundle"
+      #ui.dependency 'PodTestLibrary/CommonTools'
+  end
+
+  s.subspec 'DataModel' do | subDataModel |
       subDataModel.source_files = 'lltreeLibrary/DataModel/**/*'
       #ui.public_header_files = 'Pod/Classes/UIKitAddition/**/*.h'
       #ui.resource = "Pod/Assets/MLSUIKitResource.bundle"
