@@ -5,9 +5,9 @@
 //  Created by gaochunlei on 2018/10/30.
 //
 
-#import "myTestView.h"
+#import "Model.h"
 
-@implementation myTestView
+@implementation Model
 
 /*
 // Only override drawRect: if you perform custom drawing.

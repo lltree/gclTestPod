@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'lltreeLibrary'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'test AAAAAAAAA'
 
 # This description is used to generate tags and improve search results.
@@ -42,14 +42,14 @@ test bbbbbbbbbbb
   # s.dependency 'AFNetworking', '~> 2.3'
 
  s.subspec 'Classes' do | subClasses |
-      subClasses.source_files = 'lltreeLibrary/Classes/**/*'
+      subClasses.source_files = 'lltreeLibrary/Classes/*'
       #ui.public_header_files = 'Pod/Classes/UIKitAddition/**/*.h'
       #ui.resource = "Pod/Assets/MLSUIKitResource.bundle"
       #ui.dependency 'PodTestLibrary/CommonTools'
   end
 
   s.subspec 'DataModel' do | subDataModel |
-      subDataModel.source_files = 'lltreeLibrary/DataModel/**/*'
+      subDataModel.source_files = 'lltreeLibrary/DataModel/*'
       #ui.public_header_files = 'Pod/Classes/UIKitAddition/**/*.h'
       #ui.resource = "Pod/Assets/MLSUIKitResource.bundle"
       #ui.dependency 'PodTestLibrary/CommonTools'
