@@ -40,4 +40,13 @@ test bbbbbbbbbbb
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+ s.subspec 'DataModel' do | subDataModel |
+      subDataModel.source_files = 'lltreeLibrary/DataModel/**/*'
+      #ui.public_header_files = 'Pod/Classes/UIKitAddition/**/*.h'
+      #ui.resource = "Pod/Assets/MLSUIKitResource.bundle"
+      #ui.dependency 'PodTestLibrary/CommonTools'
+  end
+
+
 end
